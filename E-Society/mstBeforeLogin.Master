@@ -1,0 +1,143 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mstBeforeLogin.master.cs" Inherits="E_Society.mstBeforeLogin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Welcome to E-Voting for Society</title>
+    <!-- meta data & title -->
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="description" content=""/>
+        <meta name="author" content=""/>
+
+        <!-- Favicon and touch icons -->
+       <%-- <link rel="shortcut icon" href="/Office-master/assets/ico/favicon.ico">--%>
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/Office-master/assets/ico/apple-touch-icon-144-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/Office-master/assets/ico/apple-touch-icon-114-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/Office-master/assets/ico/apple-touch-icon-72-precomposed.png"/>
+        <link rel="apple-touch-icon-precomposed" href="/Office-master/assets/ico/apple-touch-icon-57-precomposed.png"/>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300"/>
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'/>
+        <link href="http://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="/Office-master/assets/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="/Office-master/assets/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="/Office-master/assets/css/animate.min.css"/>
+        <link rel="stylesheet" href="/Office-master/assets/css/style.css"/>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <!-- Header -->
+        
+    <nav id="navbar-section" class="navbar navbar-default navbar-static-top navbar-sticky" role="navigation">
+        <div class="container">
+        
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand wow fadeInDownBig" href="Home"><img class="office-logo" src="/Office-master/assets/img/slider/Office.png" alt="E-Voting"></a>      
+            </div>
+        
+            <div id="navbar-spy" class="collapse navbar-collapse navbar-responsive-collapse">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active">
+                        <a href="Home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="Login">Login</a>
+                    </li>
+                    
+                   
+                    <li>
+                        <a href="Registration">Register</a>
+                    </li>
+                    <li>
+                        <a href="contact.html"><span>Contact</span></a>
+                    </li>
+                </ul>         
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Header -->
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+
+
+
+            <!-- Footer -->
+    <footer> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3><i class="fa fa-map-marker"></i> Contact:</h3>
+                    <p class="footer-contact">
+                        Via Ludovisi 39-45, Rome, 54267, Italy<br>
+                        Phone: 1.800.245.356 Fax: 1.800.245.357<br>
+                        Email: hello@LawOffice.org<br>
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h3><i class="fa fa-external-link"></i> Links</h3>
+                    <p> <a href="#"> About ( Who we are )</a></p>
+                    <p> <a href="#"> Services ( What we do )</a></p>
+                    <p> <a href="#"> Contact ( Feel free to contact )</a></p>
+                    <p> <a href="#"> Blog ( Write to us )</a></p>
+                    <p> <a href="#"> Team ( Meet the Team )</a></p> 
+                </div>
+              <div class="col-md-4">
+                <h3><i class="fa fa-heart"></i> Socialize</h3>
+                <div id="social-icons">
+                    <a href="#" class="btn-group google-plus">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                      <a href="#" class="btn-group linkedin">
+                        <i class="fa fa-linkedin-square"></i>
+                    </a>
+                      <a href="#" class="btn-group twitter">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                      <a href="#" class="btn-group facebook">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </div>
+              </div>    
+        </div>
+      </div>
+    </footer>
+
+    
+    <div class="copyright text center">
+        <p>&copy; Copyright  <%=  DateTime.Now.Year.ToString() %>  , <a href="#">ICAR-IASRI Pusa,New Delhi</a></p>
+    </div>
+
+    
+    <script type="text/javascript" src="/Office-master/js/jquery-1.10.2.min.js"></script>
+    <script src="/Office-master/assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/Office-master/js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+        </div>
+    </form>
+</body>
+</html>
